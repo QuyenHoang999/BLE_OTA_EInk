@@ -113,6 +113,8 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
     // -------------------------------
     // This event indicates that a new connection was opened.
     case sl_bt_evt_connection_opened_id:
+     sl_bt_connection_set_parameters(evt->data.evt_connection_opened.connection, 6, 6, 0, 1000, 0, 0xffff);
+      break;
       app_log("Connection opened\r\n");
       break;
 
