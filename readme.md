@@ -2,7 +2,7 @@
 
 Bluetooth SoC application for an EFR32MG24 target with application-level OTA firmware update support. The app starts BLE legacy advertising after boot, accepts connections, receives OTA image data through the Silicon Labs OTA GATT service, verifies the downloaded image in bootloader storage slot 0, and installs the verified image after the connection closes.
 
-The current GATT device name is `Empty Example` in `config/btconf/gatt_configuration.btconf`.
+The current GATT device name is `BLE OTA EInk` in `config/btconf/gatt_configuration.btconf`.
 
 ## Project Layout
 
@@ -14,6 +14,7 @@ The current GATT device name is `Empty Example` in `config/btconf/gatt_configura
 | `config/btconf/gatt_configuration.btconf` | Generic Access and Device Information GATT configuration. |
 | `config/btconf/app_ota_dfu.xml` | Silicon Labs OTA service definition added by the Application OTA DFU component. |
 | `BLE_OTA_EInk.slcp` | Simplicity Studio project/component definition. |
+| `RELEASE_NOTES.md` | Current project release notes and known limitations. |
 
 Generated build output and the copied SDK directory are intentionally ignored by Git:
 
@@ -77,7 +78,7 @@ If OTA fails at startup with slot information errors, check that:
 1. Flash a compatible Gecko Bootloader.
 2. Build and flash this application.
 3. Open Simplicity Connect on a phone or desktop.
-4. Scan for the device name `Empty Example`.
+4. Scan for the device name `BLE OTA EInk`.
 5. Connect and confirm the Generic Access, Device Information, and Silicon Labs OTA services are visible.
 6. Start an OTA update using a compatible signed/packaged application image for the installed bootloader.
 
