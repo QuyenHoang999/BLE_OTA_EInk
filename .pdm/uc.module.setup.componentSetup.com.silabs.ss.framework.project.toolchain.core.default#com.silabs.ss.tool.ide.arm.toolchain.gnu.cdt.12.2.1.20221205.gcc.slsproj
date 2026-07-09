@@ -7,6 +7,68 @@
     <file name="readme_img3.png" linked="false" uri="studio:/project/image/readme_img3.png"/>
     <file name="readme_img4.png" linked="false" uri="studio:/project/image/readme_img4.png"/>
   </folder>
+  <folder name="third_party_hw_drivers_4.4.1">
+    <folder name="driver">
+      <folder name="public">
+        <folder name="silabs">
+          <folder name="fatfs_sdc_spi_platform">
+            <folder name="src">
+              <file name="sl_sdc_platform_spi.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/silabs/fatfs_sdc_spi_platform/src/sl_sdc_platform_spi.c"/>
+            </folder>
+            <folder name="inc">
+              <file name="sl_sdc_platform_spi.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/silabs/fatfs_sdc_spi_platform/inc/sl_sdc_platform_spi.h"/>
+            </folder>
+          </folder>
+          <folder name="services_fatfs">
+            <folder name="src">
+              <file name="sl_sdc_media.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/silabs/services_fatfs/src/sl_sdc_media.c"/>
+            </folder>
+            <folder name="inc">
+              <file name="diskio.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/silabs/services_fatfs/inc/diskio.h"/>
+            </folder>
+          </folder>
+        </folder>
+        <folder name="mikroe">
+          <folder name="microsd">
+            <folder name="src">
+              <file name="sl_sdc_sd_card.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/mikroe/microsd/src/sl_sdc_sd_card.c"/>
+            </folder>
+            <folder name="inc">
+              <file name="sl_sdc_sd_card.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/public/mikroe/microsd/inc/sl_sdc_sd_card.h"/>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+      <folder name="inc">
+        <file name="third_party_hw_drivers_helpers.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/inc/third_party_hw_drivers_helpers.h"/>
+      </folder>
+      <folder name="thirdparty">
+        <folder name="fatfs">
+          <file name="ff.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/thirdparty/fatfs/ff.c"/>
+          <file name="ffsystem.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/thirdparty/fatfs/ffsystem.c"/>
+          <file name="ffunicode.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/thirdparty/fatfs/ffunicode.c"/>
+          <file name="ff.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/thirdparty/fatfs/ff.h"/>
+        </folder>
+      </folder>
+      <folder name="peripheral_drivers">
+        <folder name="mikroe">
+          <folder name="src">
+            <file name="drv_digital_in.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/src/drv_digital_in.c"/>
+            <file name="drv_digital_out.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/src/drv_digital_out.c"/>
+            <file name="drv_spi_master.c" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/src/drv_spi_master.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="hal_target.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/hal_target.h"/>
+            <file name="drv_name.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/drv_name.h"/>
+            <file name="drv_digital_in.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/drv_digital_in.h"/>
+            <file name="drv_digital_out.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/drv_digital_out.h"/>
+            <file name="hal_gpio.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/hal_gpio.h"/>
+            <file name="drv_spi_master.h" linked="false" uri="studio:/sdk/extension/third_party_hw_drivers_extension/driver/peripheral_drivers/mikroe/inc/drv_spi_master.h"/>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </folder>
   <folder name="simplicity_sdk_2025.6.2">
     <folder name="platform">
       <folder name="Device">
@@ -115,6 +177,34 @@
             <file name="btl_internal_flash.h" linked="false" uri="studio:/sdk/platform/bootloader/core/flash/btl_internal_flash.h"/>
           </folder>
           <file name="btl_util.h" linked="false" uri="studio:/sdk/platform/bootloader/core/btl_util.h"/>
+        </folder>
+      </folder>
+      <folder name="driver">
+        <folder name="button">
+          <folder name="src">
+            <file name="sl_button.c" linked="false" uri="studio:/sdk/platform/driver/button/src/sl_button.c"/>
+            <file name="sl_simple_button.c" linked="false" uri="studio:/sdk/platform/driver/button/src/sl_simple_button.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_button.h" linked="false" uri="studio:/sdk/platform/driver/button/inc/sl_button.h"/>
+            <file name="sl_simple_button.h" linked="false" uri="studio:/sdk/platform/driver/button/inc/sl_simple_button.h"/>
+          </folder>
+        </folder>
+        <folder name="debug">
+          <folder name="src">
+            <file name="sl_debug_swo.c" linked="false" uri="studio:/sdk/platform/driver/debug/src/sl_debug_swo.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_debug_swo.h" linked="false" uri="studio:/sdk/platform/driver/debug/inc/sl_debug_swo.h"/>
+          </folder>
+        </folder>
+        <folder name="gpio">
+          <folder name="src">
+            <file name="sl_gpio.c" linked="false" uri="studio:/sdk/platform/driver/gpio/src/sl_gpio.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_gpio.h" linked="false" uri="studio:/sdk/platform/driver/gpio/inc/sl_gpio.h"/>
+          </folder>
         </folder>
       </folder>
       <folder name="service">
@@ -314,24 +404,6 @@
           </folder>
         </folder>
       </folder>
-      <folder name="driver">
-        <folder name="debug">
-          <folder name="src">
-            <file name="sl_debug_swo.c" linked="false" uri="studio:/sdk/platform/driver/debug/src/sl_debug_swo.c"/>
-          </folder>
-          <folder name="inc">
-            <file name="sl_debug_swo.h" linked="false" uri="studio:/sdk/platform/driver/debug/inc/sl_debug_swo.h"/>
-          </folder>
-        </folder>
-        <folder name="gpio">
-          <folder name="src">
-            <file name="sl_gpio.c" linked="false" uri="studio:/sdk/platform/driver/gpio/src/sl_gpio.c"/>
-          </folder>
-          <folder name="inc">
-            <file name="sl_gpio.h" linked="false" uri="studio:/sdk/platform/driver/gpio/inc/sl_gpio.h"/>
-          </folder>
-        </folder>
-      </folder>
       <folder name="emdrv">
         <folder name="dmadrv">
           <folder name="src">
@@ -377,6 +449,14 @@
             <file name="nvm3_config.h" linked="false" uri="studio:/sdk/platform/emdrv/nvm3/config/nvm3_config.h"/>
           </folder>
         </folder>
+        <folder name="spidrv">
+          <folder name="src">
+            <file name="spidrv.c" linked="false" uri="studio:/sdk/platform/emdrv/spidrv/src/spidrv.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="spidrv.h" linked="false" uri="studio:/sdk/platform/emdrv/spidrv/inc/spidrv.h"/>
+          </folder>
+        </folder>
       </folder>
       <folder name="emlib">
         <folder name="src">
@@ -390,6 +470,7 @@
           <file name="em_prs.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_prs.c"/>
           <file name="em_system.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
           <file name="em_timer.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_timer.c"/>
+          <file name="em_usart.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_usart.c"/>
         </folder>
         <folder name="inc">
           <file name="em_burtc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_burtc.h"/>
@@ -416,6 +497,7 @@
           <file name="em_system.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system.h"/>
           <file name="em_system_generic.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system_generic.h"/>
           <file name="em_timer.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_timer.h"/>
+          <file name="em_usart.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_usart.h"/>
         </folder>
       </folder>
       <folder name="peripheral">
@@ -1241,6 +1323,12 @@
   <excludedPath>image/readme_img4.png</excludedPath>
   <excludedPath>simplicity_sdk_2025.6.2/protocol/bluetooth/api/sl_bt.xapi</excludedPath>
   <includePath uri="studio:/project/"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/public/silabs/fatfs_sdc_spi_platform/inc"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/inc"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/public/mikroe/microsd/inc"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/public/silabs/services_fatfs/inc"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/thirdparty/fatfs"/>
+  <includePath uri="studio:/project/third_party_hw_drivers_4.4.1/driver/peripheral_drivers/mikroe/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/Device/SiliconLabs/EFR32MG24/Include"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/app/common/util/app_assert"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/app/common/util/app_log"/>
@@ -1256,6 +1344,7 @@
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/bootloader"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/bootloader/api"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/bootloader/core/flash"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/driver/button/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/service/clock_manager/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/service/clock_manager/src"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/CMSIS/Core/Include"/>
@@ -1316,6 +1405,7 @@
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/security/sl_component/sli_crypto/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/security/sl_component/sl_protocol_crypto/src"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/security/sl_component/sli_psec_osal/inc"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/emdrv/spidrv/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.2/platform/service/udelay/inc"/>
   <macroDefinition name="EFR32MG24B310F1536IM48"/>
   <macroDefinition name="SL_CODE_COMPONENT_SYSTEM" value="system"/>
@@ -1352,6 +1442,7 @@
   <macroDefinition name="SLI_RADIOAES_REQUIRES_MASKING"/>
   <macroDefinition name="SL_CODE_COMPONENT_SLI_PROTOCOL_CRYPTO" value="sli_protocol_crypto"/>
   <macroDefinition name="SL_CODE_COMPONENT_PSEC_OSAL" value="psec_osal"/>
+  <macroDefinition name="SL_CODE_COMPONENT_SPIDRV" value="spidrv"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.2/protocol/bluetooth/bgcommon/lib/build/gcc/cortex-m33/bgcommon/release/libbgcommon.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.2/protocol/bluetooth/bgstack/ll/build/gcc/xg24/release/liblinklayer.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.2/protocol/bluetooth/build/gcc/cortex-m33/ble_host/bgstack/release/libbondingdb.a"/>

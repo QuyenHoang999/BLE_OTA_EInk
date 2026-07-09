@@ -20,6 +20,7 @@
 void ota_init(void);
 void ota_handle_user_write_request(sl_bt_msg_t *evt);
 void ota_handle_external_signal(uint32_t extsignals);
+bool ota_is_update_active(void);
 bool ota_is_image_ready_to_install(void);
 void ota_install_image(void);
 

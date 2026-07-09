@@ -18,16 +18,18 @@ readme:
 - {path: readme.md}
 source:
 - {path: app.c}
-- {path: ota.c}
+- {path: sd_card.c}
 tag: ['hardware:rf:band:2400']
 include:
 - path: .
   file_list:
   - {path: app.h}
-  - {path: ota.h}
+  - {path: sd_card.h}
 sdk: {id: simplicity_sdk, version: 2025.6.2}
 toolchain_settings: []
 component:
+- {from: third_party_hw_drivers, id: mikroe_microsd}
+- {from: third_party_hw_drivers, id: services_fatfs}
 - {id: EFR32MG24B310F1536IM48}
 - {id: app_assert}
 - {id: app_log}
@@ -51,6 +53,9 @@ component:
 - {id: micriumos_kernel}
 - {id: mpu}
 - {id: rail_util_pti}
+- instance: [button_back, button_nav_down, button_nav_up, button_page_next, button_page_prev,
+    button_power, button_select]
+  id: simple_button
 - {id: sl_main}
 other_file:
 - {path: image/readme_img0.png}
@@ -79,6 +84,8 @@ ui_hints:
   highlight:
   - {path: config/btconf/gatt_configuration.btconf}
   - {path: readme.md, focus: true}
+sdk_extension:
+- {id: third_party_hw_drivers, version: 4.4.1}
 post_build:
 - {path: BLE_OTA_EInk.slpb, profile: bt_common}
 

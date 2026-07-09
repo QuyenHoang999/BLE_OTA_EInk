@@ -104,6 +104,13 @@ void ota_handle_external_signal(uint32_t extsignals)
   }
 }
 
+bool ota_is_update_active(void)
+{
+  return (ota_in_progress != 0)
+         || (ota_verify_in_progress != 0)
+         || (ota_image_finished != 0);
+}
+
 bool ota_is_image_ready_to_install(void)
 {
   return ota_image_finished != 0;

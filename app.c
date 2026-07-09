@@ -29,14 +29,24 @@
  ******************************************************************************/
 #include "sl_bt_api.h"
 #include "sl_main_init.h"
+#include "sl_power_manager.h"
+#include "sl_simple_button_instances.h"
+#include "sl_sleeptimer.h"
 #include "app_assert.h"
 #include "app_log.h"
 #include "app.h"
 #include "ota.h"
+#include "sd_card.h"
 
 // The advertising set handle allocated from Bluetooth stack.
 static uint8_t advertising_set_handle = 0xff;
+static volatile bool power_button_pressed = false;
+static volatile bool power_button_press_pending = false;
+static volatile bool power_button_release_pending = false;
 
+/***************************************************************************//**
+ * Initialize application.
+ ******************************************************************************/
 /**************************************************************************//**
  * Static function declaration
  *****************************************************************************/
@@ -45,23 +55,16 @@ static void start_advertising(void);
 // Application Init.
 void app_init(void)
 {
-  /////////////////////////////////////////////////////////////////////////////
-  // Put your additional application init code here!                         //
-  // This is called once during start-up.                                    //
-  /////////////////////////////////////////////////////////////////////////////
+  sd_card_init();
 }
 
 // Application Process Action.
 void app_process_action(void)
 {
   if (app_is_process_required()) {
-    /////////////////////////////////////////////////////////////////////////////
-    // Put your additional application code here!                              //
-    // This is will run each time app_proceed() is called.                     //
-    // Do not call blocking functions from here!                               //
-    /////////////////////////////////////////////////////////////////////////////
   }
 }
+
 // Proceed with advertising starting.
 static void start_advertising(void)
 {
